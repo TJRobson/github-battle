@@ -1,5 +1,12 @@
 const transparentBg = {
     background: 'transparent'
-  }
+}
 
-export { transparentBg }
+const space = {
+    marginTop: '25px',
+}
+
+export {
+  transparentBg,
+  space
+ }

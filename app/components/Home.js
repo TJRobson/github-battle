@@ -1,16 +1,16 @@
 import React from 'react'
 import { ReactRouter, Link } from 'react-router'
-
+import MainContainer from './MainContainer'
 import { transparentBg } from '../styles'
 
 const Home = () => (
-  <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+  <MainContainer>
     <h1>Github Battle</h1>
     <p className='lead'>What even is a jQuery?</p>
     <Link to='/playerOne'>
       <button type='button' className='btn btn-lg btn-success'>Get Started</button>
     </Link>
-  </div>
+  </MainContainer>
 )
 
 export default Home
