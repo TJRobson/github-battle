@@ -6,6 +6,7 @@ var UserDetailsWrapper = require('./UserDetailsWrapper')
 var UserDetails = require('./UserDetails')
 var MainContainer = require('./MainContainer')
 var space = require('../styles').space
+var Loading = require('./Loading')
 
 // function puke (obj) {
 //   return <pre>{JSON.stringify(obj, null, ' ')}</pre>
@@ -13,7 +14,7 @@ var space = require('../styles').space
 
 function ConfirmBattle (props) {
   return props.isLoading === true
-    ? <p>LOADING</p>
+    ? <Loading />
   : <MainContainer>
         <h1>Confirm Players</h1>
         <div className='col-sm-8 col-sm-offset-2'>
